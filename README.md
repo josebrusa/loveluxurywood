@@ -1,2 +1,0 @@
-# loveluxurywood
-landingpage loveluxurywood
