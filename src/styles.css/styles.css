@@ -1,6 +1,3 @@
-/* Font */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
-
 /* CSS HEX */
 :root {
     --black-chocolate: #0f1108;
@@ -34,9 +31,9 @@ body {
         position: fixed;
         width: 100%;
         background-color: #fff;
-        border-bottom: 1px solid rgba(156, 156, 156, 0.363);
-        -webkit-box-shadow: 0px 10px 17px 3px rgba(0,0,0,0.2); 
-        box-shadow: 0px 10px 17px 3px rgba(0,0,0,0.2);
+        /* border-bottom: 1px solid rgba(156, 156, 156, 0.363); */
+        -webkit-box-shadow: 0px 10px 17px 3px rgba(0,0,0,0.1); 
+        box-shadow: 0px 5px 12px 1px rgba(0,0,0,0.1);
     }
 
     .nav__toggle {
@@ -113,7 +110,7 @@ body {
 
     .container-home {
         width: 100%;
-        height: 41.5rem;
+        height: 44.5rem;
         background-image: linear-gradient(180deg, rgba(255,255,255,0.1) 1%, rgba(0,0,0,1.9) 95%), url('../assets/pexels-cottonbro-5089178.jpg');
         background-repeat: no-repeat;
         background-size: cover;
@@ -130,22 +127,25 @@ body {
     }
 
     .container-home h3 {
-        font-size: 1.8rem;
-        margin: 0 25px;
-        font-weight: 400;
+        font-size: 3.8rem;
+        margin: 0 35px;
+        padding-bottom: 2rem;
+        font-weight: 200;
         color: rgba(255, 255, 255, 0.829);
     }
 
     .container-home h1 {
         margin: 15px  ;
-        font-size: 1.8rem;
-        font-weight: 200;
+        font-size: 2.3rem;
+        font-weight: 100;
         color: rgba(255, 255, 255, 0.918);
     }
 
+    /* CARDS */
 
     section .container-cards {
         width: 100%;
+        height: 200rem;
         background-image: linear-gradient(to bottom, #000000, #392224, #6f4039, #a36546, #d0924f);
     }
 
@@ -161,7 +161,7 @@ body {
         background-color: #ffffff;
         border: 1px solid rgba(0, 0, 0, 0.226);
         border-radius: 6px;
-        box-shadow: 4px 12px 16px 0px rgb(0 0 0 / 20%);
+        box-shadow: 15px 15px 16px 7px rgba(0, 0, 0, 0.1);
         width: 250px;
         height: 400px;
         margin: 15px;
@@ -171,13 +171,13 @@ body {
     .container-cards .cards-title {
         display: flex;
         justify-content: center;
-        font-family: 'Roboto';
-        font-size: 1.4rem;
-        font-weight: 200;
+        text-align: center;
         color: rgba(238, 238, 238, 0.918);
     }
 
     .cards-title h3 {
+        font-size: 3.5rem;
+        font-weight: 200;
         margin-top: 7rem;
         margin-bottom: 4rem;
     }
@@ -187,10 +187,7 @@ body {
 
     }
 
-
-
     .card-info h3 {
-        font-family: 'Roboto';
         font-size: 16px;
         font-weight: 300;
         color: rgb(44, 44, 44);
@@ -207,26 +204,80 @@ body {
 
     .card .card-button {
         display: flex;
-        justify-content: end;
-        margin-right: 2.8rem;
-        margin-top: 1.4rem;
+        justify-content: center;
+        margin-top: 2.6rem;
     }
 
     .card .card-button button {
-        border: none;
+        border: 1px solid rgb(44, 44, 44);
+        width: 5.2rem;
+        height: 1.9rem;
+        border-radius: 4px;
         background: transparent;
         font-family: 'Roboto';
-        font-size: 16px;
+        font-size: 14px;
         font-weight: 300;
+        text-transform: uppercase;
         color: rgb(44, 44, 44);
         margin: 8px 0;
         cursor: pointer;
     }
 
     .card .card-button button:hover {
-        border-bottom: 1px solid#fea82f;
-
+        background-color: #fea82fde;
+        color: rgba(255, 255, 255, 0.918);
+        border: 1px solid transparent;
     }
+
+        /* ABOUT */
+
+        .container__nosotros {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            padding: 0 34px;
+            padding-top: 7rem;
+            border: 1px solid sandybrown;
+        }
+
+        .title__nosotros h2 {
+            font-size: 3.5rem;
+            font-weight: 200;
+            color: rgb(44, 44, 44);
+            text-align: center;
+        }
+
+        .info__video--nosotros {
+            width: 100%;
+            height: 540px;
+            text-align: center;
+            margin: 45px 0;
+            box-shadow: 15px 15px 16px 7px rgba(0, 0, 0, 0.1);
+        }
+
+        .info__video--nosotros .video--nosotros {
+            background: #000;
+            width: 100%;
+            height: 9.5rem;
+            margin-bottom: 2.6rem;
+        }
+
+
+        .text__info--nosotros p {
+            font-size: 1rem;
+            font-weight: 300;
+            padding: 0 14px;
+        }
+
+
+
+    
+
+        .info__card--nosotros img {
+            width: 200px;
+            height: 100px;
+        }
 
 
 
